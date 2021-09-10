@@ -1,0 +1,75 @@
+@import url('https://fonts.googleapis.com/css2?family=Dosis:wght@200&display=swap');
+
+*, *::before, *::after {
+    margin: 0;
+}
+body {
+    font-family: 'Dosis', sans-serif;
+    background: linear-gradient(90deg, #d87e92, #f3c4fb);
+    height: 100vh;
+}
+.app-container {
+    width: 350px;
+    height: 650px;
+    border-radius: 20px;
+    background-color: #483345bf;
+    border: 4px solid white;
+    box-shadow: inset 0 0 10px white, 0 0 30px gray;
+}
+.overlay {
+    padding: 20px;
+}
+.title {
+    color: white;
+    display: flex;
+    flex-direction: row;
+}
+.title h1 {
+    margin: auto;
+}
+.title img{
+    height: 50px;
+}
+.hover {
+    padding: 8px;
+    border-top: solid thin white;
+}
+.hover:hover {
+    background-color: #483345bf;
+    border-radius: 0 0 5px 5px;
+}
+.play__btn {
+    background: radial-gradient(orange, rgb(219, 104, 10));
+    box-shadow: 0 0 5px grey;
+    color: white;
+}
+.stat__btn:hover {
+    color: #483345;
+}
+#app {
+    font-family: Avenir, Helvetica, Arial, sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    margin-top: 20px;
+}
+
+@media only screen and (max-width: 400px) {
+    .app-container {
+        width: 300px;
+        height: 550px;
+    }
+    .title h1 {
+        margin-right: 10px;
+        font-size: 16pt;
+    }
+    .title img{
+        height: 34px;
+    }
+    .word {
+        font-size: 10pt;
+    }
+    .play__btn {
+        width: 70px;
+        height: 70px;
+    }
+}
